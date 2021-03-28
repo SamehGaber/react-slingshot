@@ -8,7 +8,7 @@ jobs:
     steps:
      - checkout
      - run: npm install lint
-      - save_cache:
+     - save_cache:
           key: "npm-packages"
           paths:
             - /src/node modules
@@ -18,7 +18,7 @@ jobs:
     steps:
      - checkout
      - restore-cahche:
-       keys: "npm-packages"
+        keys: "npm-packages"
      - run: npm run test
   analyze:
     docker:
