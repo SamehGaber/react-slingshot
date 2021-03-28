@@ -18,7 +18,8 @@ jobs:
     steps:
      - checkout
      - restore-cache:
-        keys: "npm-packages"
+        keys: 
+          - "npm-packages"
      - run: npm run test
   analyze:
     docker:
