@@ -17,7 +17,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
      - checkout
-     - restore-cahche:
+     - restore-cache:
         keys: "npm-packages"
      - run: npm run test
   analyze:
